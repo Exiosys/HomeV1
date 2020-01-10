@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+    <title>Page Accueil</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <h1 id="left">SS Sport</h1>
+            <button onClick="display_menu()" class="menu_button" id="right"><img src="images/menu.png" width=30px
+                    height=30px>Menu</button>
+        </nav>
+        <div class="header_content">
+            <img src="images/logo_white.png">
+            <h1>SS Sport</h1>
+            <p>Le nouveau site de musculation</p>
+            <a href="#listcard"><button><b>Découvrire</b></button></a>
+        </div>
+    </header>
+
+    <div class="div_menu_hidden" id="div_menu">
+        <div class="display_menu">
+            <h1>Menu</h1>
+            <p onClick="hide_menu()" class="remove_menu" id="top_right"><b>X</b></p>
+            <ul>
+                <li>Menu1</li>
+                <li>Menu2</li>
+                <li>Menu3</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="listcard" id="listcard">
+            <ul class="card">
+                <li>
+                    <IMG src="images/dbz_windows.png" width=600px>
+                </li>
+                <li>
+                    <div>
+                        <img class="top_card" src="images/top_xp.png">
+                        <h1>
+                            Expérience !
+                        </h1>
+                        <p>Un système unique et original est en place ! Un système d'experience qui <span
+                                id="surlignement">augmente</span> selon votre
+                            activité physique ! Comparez vos résultats et partagez les !</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="card">
+                <li>
+                    <div>
+                        <img class="top_card_little" src="images/top_chat.png">
+                        <h1>
+                            En ligne !
+                        </h1>
+                        <p>Un système de partage d'entraînement et de discussion entre sportifs !</p>
+                    </div>
+                </li>
+                <li>
+                    <IMG src="images/chat_windows.png" width=600px>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
