@@ -28,6 +28,18 @@
   #top_card {
     margin: 0;
   }
+  #discover {
+    width: 70vw;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    margin-top: calc(610px - 50px - 40px);
+    margin-left: calc(-35%);
+  }
+  #header_content p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 /* RESPONSIVE */
 
@@ -114,8 +126,9 @@ nav {
 }
 
 nav h1 {
-  font-family: "SkuSku";
-  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  font-size: 25px;
+  font-weight: inherit;
   text-transform: initial;
 }
 

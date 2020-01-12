@@ -10,21 +10,21 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
         </script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <title>Page Accueil</title>
 </head>
 
 <body>
-    <button id="scrolltop" onClick="ScrollToTop()"><img src="images/scroll.png"></button>
     <header>
         <nav id="navbar">
             <h1 id="left_nav">SkuSku Sport</h1>
             <button onClick="display_menu()" class="menu_button" id="right"><img src="images/menu.png" width=30px
                     height=30px>Menu</button>
         </nav>
-        <div class="header_content">
+        <div class="header_content" id="header_content">
             <img src="images/logo_white.png">
             <p>Become the dreamed you</p>
-            <a href="#listcard"><button><b>Découvrire</b></button></a>
+            <a href="#listcard"><button id="discover"><b>Découvrire</b></button></a>
         </div>
     </header>
 
