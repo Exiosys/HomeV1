@@ -1,18 +1,16 @@
 window.onscroll = function() {
   var nav = document.getElementById("navbar");
-  if (window.pageYOffset >= 565) {
+  if (window.pageYOffset >= 560) {
     nav.className = "sticky";
-  } else if (window.pageYOffset < 565) {
+  } else if (window.pageYOffset < 560) {
     nav.classList.remove("sticky");
   }
 };
 
 function display_menu() {
-  var menu = document.getElementById("div_menu");
-  menu.className = "div_menu_display";
+  $("#div_menu").toggle("slide");
 }
 
-function hide_menu() {
-  var menu = document.getElementById("div_menu");
-  menu.className = "div_menu_hidden";
+function ScrollToTop() {
+  window.scrollTo(0, 0);
 }

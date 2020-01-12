@@ -14,17 +14,16 @@
 </head>
 
 <body>
-
+    <button id="scrolltop" onClick="ScrollToTop()"><img src="images/scroll.png"></button>
     <header>
         <nav id="navbar">
-            <h1 id="left">SS Sport</h1>
+            <h1 id="left_nav">SkuSku Sport</h1>
             <button onClick="display_menu()" class="menu_button" id="right"><img src="images/menu.png" width=30px
                     height=30px>Menu</button>
         </nav>
         <div class="header_content">
             <img src="images/logo_white.png">
-            <h1>SS Sport</h1>
-            <p>Le nouveau site de musculation</p>
+            <p>Become the dreamed you</p>
             <a href="#listcard"><button><b>Découvrire</b></button></a>
         </div>
     </header>
@@ -32,11 +31,13 @@
     <div class="div_menu_hidden" id="div_menu">
         <div class="display_menu">
             <h1>Menu</h1>
-            <p onClick="hide_menu()" class="remove_menu" id="top_right"><b>X</b></p>
+            <p onClick="display_menu()" class="remove_menu" id="top_right"><b>X</b></p>
             <ul>
-                <li>Menu1</li>
-                <li>Menu2</li>
-                <li>Menu3</li>
+                <li>Training</li>
+                <li>Diet</li>
+                <li>Online</li>
+                <li>Shop</li>
+                <li>Dictionnary</li>
             </ul>
         </div>
     </div>
@@ -45,13 +46,13 @@
 
     <div class="container">
         <div class="listcard" id="listcard">
-            <ul class="card">
+            <ul class="card" id="card">
                 <li>
-                    <IMG src="images/dbz_windows.png" width=600px>
+                    <IMG class="illustration" id="illustration" src="images/dbz_windows.png">
                 </li>
                 <li>
                     <div>
-                        <img class="top_card" src="images/top_xp.png">
+                        <img class="top_card" id="top_card" src="images/top_xp.png">
                         <h1>
                             Expérience !
                         </h1>
@@ -61,7 +62,7 @@
                     </div>
                 </li>
             </ul>
-            <ul class="card">
+            <ul class="card" id="card">
                 <li>
                     <div>
                         <img class="top_card_little" src="images/top_chat.png">
@@ -72,12 +73,20 @@
                     </div>
                 </li>
                 <li>
-                    <IMG src="images/chat_windows.png" width=600px>
+                    <IMG class="illustration" id="illustration" src="images/chat_windows.png">
                 </li>
             </ul>
 
         </div>
     </div>
+
+    <footer>
+        <a href="#" target="_blank"><img id="left" src="images/icon_mail.png"></a>
+        <a href="#" target="_blank"><img class="social" src="images/icon_fb.png"></a href="#">
+        <a href="#" target="_blank"><img class="social" src="images/icon_twt.png"></a>
+        <a href="#" target="_blank"><img class="social" src="images/icon_insta.png"></a>
+        <img onClick="ScrollToTop()" id="right" src="images/icon_scroll.png">
+    </footer>
 
 
 
